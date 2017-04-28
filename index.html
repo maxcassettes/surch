@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>SURCH - Find Cool Stuff</title>
+ 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<script src="script.js"></script>
+ 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3npBQ3olMD7l66JnlJ4UQsEUxRJBziEw&callback=initMap&libraries=places" async defer></script>
+	<link href="style.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="header">
+<h1>SURCH</h1>
+<h2>Find Cool Stuff</h2>
+
+</div>
+<div id="barBG">
+</div>
+<div id="barBlue">
+</div>
+<div id="barYellow">
+</div>
+<div id="barRed">
+</div>
+<div id="map">
+</div>
+
+<!--
+<div id = "logo">
+<img src="images/logo2.png" alt="Flying Turtle logo"/>
+</div>
+-->
+
+
+
+<div id='options'>
+
+
+<div class='option' id="books" onmouseover="booksText();"
+onmouseout="noBooksText();" onclick="books();" >
+<img src="images/book.png" alt="books" />
+</div>
+<div id="btxt">Search for<br>
+Books & Comics</div>
+
+
+
+<div class='option' id="records">
+<img src="images/record2.png" alt="records" onmouseover="recordsText();" onmouseout="noRecordsText();" onclick="music();"/>
+</div>
+<div id="rtxt">Search for<br>
+Records</div>
+
+<div class='option' id="vgames" >
+<img src="images/joystick.png" alt="video games" onclick="games()" onmouseover="vgText();"
+onmouseout="noVGText();"/>
+</div>
+<div id="vgtxt">Search for<br>
+Video Games</div>
+
+<div class='option' id="toys" >
+<img src="images/toy.png" alt="toys and collectables" onclick="toys();" onmouseover="toysText();" onmouseout="noToysText();"/>
+</div>
+<div id="ttxt">Search for<br>
+Toys & Collectables</div>
+
+</div>
+
+<div id="redRight">
+</div>
+<div id="blueRight">
+</div>
+
+<div id="place">
+</div>
+
+<div id="footer">
+</div>
+
+
+</body>
+</html>
